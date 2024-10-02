@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+    --primary: #a43d7f;
+    --primary-dark: #6d2e55;
+    --primary-light: #F2D8ED;
+}
+
+* {
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background-color: #f3f4f6;
+}
+
+.navbar {
+    background-color: var(--primary);
+    color: white;
+
+    a{
+        color: white;
+        text-decoration: none;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        line-height: 1;
+    }
+}
+
+.subheader {
+    padding: 1em 0;
+    background-color: white;
+
+    .main-title {
+        color: var(--primary);
+        font-weight: 700;
+    }
+}
+
+.card-main {
+    margin: 2em 0;
+    border: none;
+
+    .card-text {
+        color: #333333;
+    }
+}
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 24px;
+
+    .btn {
+        padding: 10px 2em !important;
+        font-weight: 600;
+    }
+}
+
+.row-levels{
+    row-gap: 24px;
+}
+
+.card-level {
+    border-color: #f2d8ed;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.08);
+    .card-body {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 148px;
+        }
+
+        strong {
+            color: var(--primary);
+        }
+    }
+}
+
+.btn-outline-primary {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+}
+
+.nav-fases {
+    .nav-link {
+        border-left: 1px solid #cccbcd;
+        color: var(--primary-dark);
+
+        &.active {
+            background-color: #f8ebf5;
+            border-width: 4px;
+            border-color: var(--primary);
+        }
+    }
+}
+
+.fase-header {
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.progress {
+    height: 20px;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background: repeating-linear-gradient(
+        -45deg,
+        /* Angle for the diagonal stripes */ #ffd500,
+        /* Yellow stripe color */ #ffd500 10px,
+        /* Width of each stripe */ #f7c300 10px,
+        /* Light yellow in between */ #f7c300 20px /* Width of the light yellow part */
+    );
+}
+
+.fase-title {
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.perguntas{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.pergunta {
+    .titulo {
+        background-color: var(--primary);
+        color: white;
+        padding: 48px;
+        font-size: 20px;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .opcoes {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        .opcao {
+            padding: 1em;
+            box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--primary-light);
+            color: var(--primary-dark);
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    padding: 1em 3em;
+    background-color: white;
+
+    .logos{
+        margin: 0 auto;
+    }
+}
