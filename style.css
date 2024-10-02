@@ -2,7 +2,7 @@
 :root {
   --primary: #a43d7f;
   --primary-dark: #6d2e55;
-  --primary-light: #F2D8ED;
+  --primary-light: #f2d8ed;
 }
 
 * {
@@ -72,6 +72,11 @@ body {
 }
 .card-level .card-body strong {
   color: var(--primary);
+}
+
+h6 {
+  color: var(--primary);
+  font-weight: bolder;
 }
 
 .btn-outline-primary {
@@ -170,4 +175,44 @@ body {
   color: #333333;
   font-weight: 600;
   font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar,
+  .footer {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  .footer .cc {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer .logos {
+    max-width: 100%;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .buttons .btn {
+    flex: 1;
+  }
+  .card-level .card-body {
+    flex-direction: column;
+  }
+  .fase-header img:not(.img08) {
+    width: 75% !important;
+  }
+  .img08 {
+    width: 100% !important;
+  }
+  .pergunta .titulo {
+    font-size: 16px;
+  }
+  .pergunta .opcao {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */
