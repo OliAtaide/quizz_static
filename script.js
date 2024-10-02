@@ -89,7 +89,7 @@ $(".navbar").append(
       <div class="navbar-brand mx-auto">
         <img src="imgs/lais.svg"/>
       </div>
-      <a href="">
+      <a href="https://lais.huol.ufrn.br/">
         Portal LAIS
         <i class="bi bi-box-arrow-up-right"></i>
       </a>

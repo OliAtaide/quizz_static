@@ -87,6 +87,13 @@ body {
 
 .btn-primary:hover {
   background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:active,
+.btn-primary:active {
+  background-color: var(--primary-light) !important;
+  border-color: var(--primary) !important;
 }
 
 .nav-fases .nav-link {
@@ -157,4 +164,10 @@ body {
 }
 .footer .logos {
   margin: 0 auto;
+}
+
+.subtitle {
+  color: #333333;
+  font-weight: 600;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
